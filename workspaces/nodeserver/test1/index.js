@@ -34,3 +34,7 @@ app.post('/quotes', (req, res) => {
     console.log(req.body)
 })
 
+const MongoClient = require('mongodb').MongoClient
+MongoClient.connect('mongodb-connection-string', (err, client) => {
+    // ... do something here
+})
